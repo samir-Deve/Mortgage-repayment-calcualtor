@@ -1,0 +1,230 @@
+.sizing {
+	min-height: 100%;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 20px 20px;
+}
+
+.header h2 {
+	font-size: 1.2em;
+}
+
+.header .clear_all {
+	text-decoration: underline;
+	background-color: transparent;
+	border: none;
+	font-weight: 600;
+	cursor: pointer;
+	color: hsla(0, 0%, 0%, 0.513);
+}
+
+/*==============================================*/
+
+.form {
+	flex-grow: 1;
+	margin: 20px 20px;
+}
+/*
+.form .Mort_amount_cont {
+
+}
+*/
+
+.form .Mort_amount_cont label{
+	font-weight: 600;
+	color: hsl(0, 0%, 0%, 0.513);
+	font-size: 1.2em;
+	margin: 0px 10px;
+}
+
+.form .Mort_amount_cont div {
+	border:  1px solid hsl(0, 0%, 0%, 0.513);
+	background-color: hsla(0, 0%, 0%, 0.175);
+	margin: 10px 0px;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	height: 50px;
+	overflow: hidden;
+}
+
+.form .Mort_amount_cont div .currency {
+	padding: 0px 5px;
+}
+
+.form .Mort_amount_cont div .input_text {
+	border: none;
+	outline: none;
+	min-height: 100%;
+	flex-grow: 1;
+	padding: 0px 10px;
+	font-size: 1.2em;
+	font-weight: 600;
+}
+
+/*=============================================*/
+
+.form .Mort_term_interest_cont {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(200px, 1fr));
+	gap: 10px;
+}
+
+.form .Mort_term_interest_cont .Mort_term_cont {
+	height: 80px;
+	display: flex;
+	flex-direction: column;
+}
+
+.form .Mort_term_interest_cont .Mort_term_cont .termLabel {
+	font-weight: 600;
+	color: hsl(0, 0%, 0%, 0.513);
+}
+
+.form .Mort_term_interest_cont .Mort_term_cont div {
+	display: flex;
+	align-items: center;
+	height: 50px;
+	margin-top: 10px;
+	border-radius: 5px;
+	background-color: hsla(0, 0%, 0%, 0.175);
+	border:  1px solid hsla(0, 0%, 0%, 0.175);
+	overflow: hidden;
+}
+
+.form .Mort_term_interest_cont .Mort_term_cont div .mortYear{
+	padding: 0px 5px;
+}
+
+.form .Mort_term_interest_cont .Mort_term_cont div .termText{
+	width: 100%;
+	border: none;
+	outline: none;
+	min-height: 100%;
+	font-size: 1.2em;
+	font-weight: 600;
+}
+
+/*======================================*/
+
+.form .Mort_term_interest_cont .Mort_interest_cont {
+	height: 80px;
+	display: flex;
+	flex-direction: column;
+}
+.form .Mort_term_interest_cont .Mort_interest_cont .interest_label{
+	font-weight: 600;
+	color: hsl(0, 0%, 0%, 0.513);
+}
+
+.form .Mort_term_interest_cont .Mort_interest_cont  div {
+	display: flex;
+	align-items: center;
+	height: 50px;
+	margin-top: 10px;
+	border-radius: 5px;
+	background-color: hsla(0, 0%, 0%, 0.175);
+	border:  1px solid hsla(0, 0%, 0%, 0.175);
+	overflow: hidden;
+}
+
+.form .Mort_term_interest_cont .Mort_interest_cont  div .interest_text {
+	width: 100%;
+	border: none;
+	outline: none;
+	min-height: 100%;
+	font-size: 1.2em;
+	font-weight: 600;
+}
+
+.form .Mort_term_interest_cont .Mort_interest_cont  div .iterest_perc_label {
+	padding: 0px 5px;
+}
+
+/*======================================*/
+
+.form .Mort_type {
+	display: flex;
+	flex-direction: column;
+	height: 150px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.form .Mort_type .mortTypeLabel {
+	font-weight: 600;
+	color: hsl(0, 0%, 0%, 0.513);
+}
+
+.form .Mort_type div {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	margin-top: 10px;
+}
+
+.form .Mort_type div .repayment {
+	border:  1px solid black;
+	height: 50px;
+	border-radius: 5px;
+}
+.form .Mort_type div .repayment .radio {
+	transform: scale(1.5);
+	margin: 20px;
+}
+
+.form .Mort_type div .repayment label {
+	font-weight: 600;
+	color: hsl(0, 0%, 0%, 0.513);
+}
+
+/*==========*/
+
+.form .Mort_type div .interest_only {
+	border:  1px solid black;
+	height: 50px;
+	border-radius: 5px;
+	margin-top: 10px;
+}
+
+.form .Mort_type div .interest_only .radio2{
+	transform: scale(1.5);
+	margin: 20px;
+}
+
+.form .Mort_type div .interest_only label {
+	font-weight: 600;
+	color: hsl(0, 0%, 0%, 0.513);
+}
+
+.form .calcualte_mort {
+	border-radius: 20px;
+	overflow: hidden;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.form .calcualte_mort button {
+	flex-grow: 1;
+	height: 50px;
+	background-color: hsl(74, 61%, 50%);
+	border: none;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 600;
+}
+
+.form .calcualte_mort button svg {
+	margin: 0px 5px;
+}
